@@ -1,0 +1,24 @@
+VMAX
+It helped me sooooo much with making simple elements responsive without using media queries
+
+METHODS (MANY METHODS)
+I've tried 3 methods in total to make this work. The first one was something called SMIL, but I couldn't make it work and it's deprecated. Second one was using clipmasks and svg shapes (created with only code!), but that didn't give the effect I was looking for. The third one worked, and it was great because it was also the simplest and more direct approach. I've ended up using simple css animations both to show the svg and to change the paths in them (that's how the "dripping" effect is done).
+I've also used a bit of JS to make the elements gain and loose classes, based on an event listener.
+
+SVG FILES
+Figma is your friend.
+Keep the area around the actual shape alwais the same size, otherwise that shit will move as your shape changes.
+
+CENTERING (OUR ETHERNAL STRUGGLE)
+position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+this is just a miracle. amen
+
+MORE INDIVIDUAL PATHS, MORE WORK (SPECIFIC ABOUT THE BLOOD SPLASH #1) 
+If I had simplyfied individual paths into one unique path would be easier to animate
+
+FILES AND NAMING
+Organizing files by "module" / "functionality" and re-naming classes after I've created it all helped to make the code more controlable and also efficient
